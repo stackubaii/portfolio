@@ -11,7 +11,7 @@ pure HTML, CSS, and JavaScript.
 
 ## Live Preview
 
-**[opsubaid.github.io](https://opsubaid.github.io/portfolio)**
+**[stackubaii.github.io](https://stackubaii.github.io/portfolio)**
 
 ---
 
@@ -136,8 +136,10 @@ All HTML pages load scripts in this sequence:
 <script src="./scripts/testimonials-data.js"></script>
 <script src="./scripts/app.js"></script>
 <!-- page-specific scripts after app.js -->
-<script src="./scripts/contact-form-validation.js"></script>  <!-- index.html only -->
-<script src="./scripts/certification-modal-logic.js"></script> <!-- about.html only -->
+<script src="./scripts/contact-form-validation.js"></script>
+<!-- index.html only -->
+<script src="./scripts/certification-modal-logic.js"></script>
+<!-- about.html only -->
 ```
 
 `app.js` reads from the data variables set by the preceding files, so load order is mandatory.
@@ -146,11 +148,11 @@ All HTML pages load scripts in this sequence:
 
 ## Pages
 
-| Page     | File                 | Status | Description                                                        |
-| -------- | -------------------- | ------ | ------------------------------------------------------------------ |
-| Home     | `index.html`         | Live   | Hero, stats, skills, experience, projects, testimonials, contact   |
-| About    | `pages/about.html`   | Live   | Bio, career timeline, certifications, tech philosophy, currently   |
-| Services | `pages/services.html`| Live   | 3 service tiers, 5-step process, mailto CTAs only                  |
+| Page     | File                  | Status | Description                                                      |
+| -------- | --------------------- | ------ | ---------------------------------------------------------------- |
+| Home     | `index.html`          | Live   | Hero, stats, skills, experience, projects, testimonials, contact |
+| About    | `pages/about.html`    | Live   | Bio, career timeline, certifications, tech philosophy, currently |
+| Services | `pages/services.html` | Live   | 3 service tiers, 5-step process, mailto CTAs only                |
 
 ---
 
@@ -271,13 +273,13 @@ with a `.mobile-subnav` block expands it while collapsing any previously open gr
 
 All dynamic content lives in dedicated data files under `scripts/`:
 
-| Array             | Renders Into              | File                        |
-| ----------------- | ------------------------- | --------------------------- |
-| `window.projects` | Featured projects carousel | `scripts/projects-data.js` |
-| `skillCategories` | Tabbed skills grid        | `scripts/skills-data.js`    |
-| `experience`      | Paginated timeline        | `scripts/experience-data.js`|
-| `clients`         | Infinite logo carousel    | `scripts/clients-data.js`   |
-| `testimonials`    | Single-card carousel      | `scripts/testimonials-data.js`|
+| Array             | Renders Into               | File                           |
+| ----------------- | -------------------------- | ------------------------------ |
+| `window.projects` | Featured projects carousel | `scripts/projects-data.js`     |
+| `skillCategories` | Tabbed skills grid         | `scripts/skills-data.js`       |
+| `experience`      | Paginated timeline         | `scripts/experience-data.js`   |
+| `clients`         | Infinite logo carousel     | `scripts/clients-data.js`      |
+| `testimonials`    | Single-card carousel       | `scripts/testimonials-data.js` |
 
 To add content, append a correctly structured object to the relevant array. No HTML editing
 required. For the full object shape of each array, see `docs/PROJECT_EDITING_GUIDE.md`.
