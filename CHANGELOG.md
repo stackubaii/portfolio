@@ -7,6 +7,39 @@ Versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
+## [3.0.1] - 2026-05-26
+
+### Fixed
+
+#### Contact Form — Full-Width on Small Screens
+
+- `.cf-card` previously used `max-width: min(900px, 90%)`, which resolved to ~90% of the
+  container's inner width on mobile — noticeably narrower than the testimonials carousel
+  (which uses `width: 100%`).
+- Added `@media (max-width: 768px)` override: `.cf-card { max-width: 100%; width: 100%; }`.
+  This aligns the form's mobile footprint exactly with `.testimonial-carousel`'s behaviour,
+  both of which now fill the full container-custom inner width (`viewport − 48px`).
+- The `@media (max-width: 640px)` block for `.cf-card` is updated to carry the same
+  `max-width: 100%; width: 100%` declarations so no specificity conflict can reintroduce the
+  narrower width at the tighter breakpoint.
+- Desktop layout (`> 768px`) is completely unchanged — form still caps at `min(900px, 90%)`.
+
+#### Global Text Selection Colour
+
+- Browser default blue (`#3B83F4`) was visible on text selection across the entire portfolio,
+  breaking the gold-noir design system.
+- Added global `::selection` and `::-moz-selection` rules (placed immediately after the
+  `body.modal-open` block in `styles/style.css`):
+  ```css
+  ::selection        { background: rgba(var(--accent-rgb), 0.35); color: var(--text-dark); }
+  ::-moz-selection   { background: rgba(var(--accent-rgb), 0.35); color: var(--text-dark); }
+  ```
+- Selection highlight now renders as a semi-transparent gold tint (`rgba(212,175,55,0.35)`)
+  consistent with `--accent-dark` and automatically responds to palette changes via
+  `--accent-rgb`.
+
+---
+
 ## [3.0.0] - 2026-05
 
 This release is a structural and content overhaul following the v2.x series. The JavaScript

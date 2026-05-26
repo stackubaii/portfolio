@@ -49,6 +49,18 @@ body.modal-open {
 }
 
 /* =========================================================
+                     TEXT SELECTION COLOUR
+   ========================================================= */
+::selection {
+  background: rgba(var(--accent-rgb), 0.35);
+  color: var(--text-dark);
+}
+::-moz-selection {
+  background: rgba(var(--accent-rgb), 0.35);
+  color: var(--text-dark);
+}
+
+/* =========================================================
                           PAGE LOADER
    ========================================================= */
 #page-loader {
@@ -4507,8 +4519,18 @@ a.client-logo {
 }
 
 /* -- Responsive -- */
+@media (max-width: 768px) {
+  /* Match the full container width of the testimonials carousel */
+  .cf-card {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
 @media (max-width: 640px) {
   .cf-card {
+    max-width: 100%;
+    width: 100%;
     padding: 1.75rem 1.25rem;
     gap: 1.35rem;
   }
