@@ -1,0 +1,214 @@
+/* -- -- Education Timeline & Certifications -- -- */
+/* -- Education Timeline Enhancements -- */
+.edu-institution {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.edu-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.5rem;
+}
+.edu-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.18rem 0.65rem;
+  border-radius: 100px;
+  border: 1px solid rgba(var(--accent-rgb), 0.35);
+  background: rgba(var(--accent-rgb), 0.08);
+  color: var(--accent-light);
+}
+.edu-badge.field {
+  border-color: rgba(var(--accent-rgb), 0.2);
+  background: rgba(var(--accent-rgb), 0.04);
+  color: var(--text-dark);
+  opacity: 0.75;
+}
+.edu-current-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-dark);
+  animation: pulse-dot 1.8s ease-in-out infinite;
+  flex-shrink: 0;
+}
+@keyframes pulse-dot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.45;
+    transform: scale(1.4);
+  }
+}
+
+/* -- Light-mode badge contrast fix -- */
+:root[data-theme="light"] .edu-badge {
+  background: rgba(var(--accent-rgb), 0.13);
+  border-color: rgba(var(--accent-rgb), 0.55);
+  color: #7a5c00;
+}
+:root[data-theme="light"] .edu-badge.field {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.22);
+  color: #333;
+  opacity: 1;
+}
+:root[data-theme="light"] .edu-institution {
+  color: #8b6914;
+}
+
+/* -- Certification Cards -- */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.cert-card {
+  text-align: center;
+  padding: 1.75rem 1.25rem 1.5rem;
+  cursor: pointer;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  user-select: none;
+}
+.cert-card:hover {
+  transform: translateY(-5px);
+}
+.cert-card:focus-visible {
+  outline: 2px solid var(--accent-dark);
+  outline-offset: 4px;
+  border-radius: 12px;
+}
+.cert-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(var(--accent-rgb), 0.1);
+  border: 1px solid rgba(var(--accent-rgb), 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  transition: background 0.3s ease;
+}
+.cert-card:hover .cert-icon-wrap {
+  background: rgba(var(--accent-rgb), 0.2);
+}
+.cert-icon-wrap i {
+  font-size: 1.3rem;
+  color: var(--accent-dark);
+}
+.cert-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.35rem;
+  line-height: 1.35;
+}
+.cert-institute {
+  font-size: 0.78rem;
+  opacity: 0.6;
+  color: var(--text-dark);
+  margin-bottom: 0.85rem;
+}
+.cert-date-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--accent-dark);
+  border: 1px solid rgba(var(--accent-rgb), 0.4);
+  border-radius: 100px;
+  padding: 0.22rem 0.8rem;
+  margin-bottom: 0.75rem;
+}
+.cert-view-hint {
+  font-size: 0.72rem;
+  opacity: 0;
+  color: var(--accent-light);
+  transition: opacity 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.cert-card:hover .cert-view-hint {
+  opacity: 1;
+}
+
+/* -- Certificate Modal -- */
+#certModal .modal-content {
+  max-width: 900px;
+}
+.cert-modal-header {
+  margin-bottom: 1rem;
+  padding-right: 3rem;
+}
+.cert-modal-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+}
+.cert-modal-sub {
+  font-size: 0.82rem;
+  opacity: 0.6;
+  color: var(--text-dark);
+}
+.cert-modal-img-wrap {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(var(--accent-rgb), 0.15);
+  background: rgba(0, 0, 0, 0.3);
+  margin-top: 1.25rem;
+}
+.cert-modal-img-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.cert-modal-placeholder {
+  width: 100%;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: var(--text-dark);
+  opacity: 0.4;
+  padding: 2rem;
+}
+.cert-modal-placeholder i {
+  font-size: 3rem;
+  color: var(--accent-dark);
+  opacity: 0.5;
+}

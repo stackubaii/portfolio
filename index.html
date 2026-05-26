@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ubaid Ahmad - Full-Stack MERN Developer &amp; UI/UX Designer</title>
+    <meta
+      name="title"
+      content="Ubaid Ahmad | Full-Stack MERN Developer &amp; UI/UX Designer"
+    />
+    <meta
+      name="description"
+      content="Full-Stack MERN Developer | Agentic AI &amp; UI/UX Design | Building fast, clean digital products for clients who've outgrown spreadsheets."
+    />
+    <meta
+      name="keywords"
+      content="Ubaid Ahmad, Full-Stack Developer, MERN Stack, UI/UX Designer, React.js, Node.js, MongoDB, Express.js, Tailwind CSS, Figma"
+    />
+    <meta name="author" content="Ubaid Ahmad" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0f0f1a" />
+    <link rel="canonical" href="https://opsubaid.github.io/" />
+
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link rel="apple-touch-icon" href="./assets/favicon.png" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://opsubaid.github.io/" />
+    <meta
+      property="og:title"
+      content="Ubaid Ahmad | Full-Stack MERN Developer &amp; UI/UX Designer"
+    />
+    <meta
+      property="og:description"
+      content="Full-Stack MERN Developer | UI/UX Design | Building fast, clean digital products."
+    />
+    <meta property="og:image" content="./assets/hero-profile-portrait.png" />
+    <meta property="og:site_name" content="Ubaid Ahmad Portfolio" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@tiredofcaffeine" />
+    <meta
+      name="twitter:title"
+      content="Ubaid Ahmad | Full-Stack MERN Developer &amp; UI/UX Designer"
+    />
+    <meta name="twitter:image" content="./assets/hero-profile-portrait.png" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ubaid Ahmad",
+        "url": "https://opsubaid.github.io/",
+        "jobTitle": "Full-Stack MERN Developer & UI/UX Designer",
+        "email": "iubaidahmad303@gmail.com",
+        "sameAs": [
+          "https://github.com/opsubaid",
+          "https://www.linkedin.com/in/ubaidwebdeveloper"
+        ]
+      }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div id="page-loader">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">Loading...</div>
+    </div>
+
+    <!-- Liquid Background -->
+    <div class="liquid-bg"></div>
+
+    <!-- -- Floating Header -- -->
+    <header class="glass-header">
+      <div class="container-custom">
+        <div class="header-content">
+          <div class="logo">Ubaid Ahmad</div>
+          <nav class="desktop-nav" aria-label="Main Navigation">
+            <a href="#hero" class="nav-active">Home</a>
+            <a href="./pages/about.html">About</a>
+            <a href="#projects">Projects</a>
+            <a href="./pages/services.html">Services</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <div class="header-actions">
+            <!-- Theme Toggle -->
+            <button
+              id="themeToggle"
+              class="theme-toggle-btn"
+              aria-label="Toggle light/dark mode"
+            >
+              <i class="fas fa-moon theme-icon-dark"></i>
+              <i class="fas fa-sun theme-icon-light" style="display: none"></i>
+            </button>
+            <!-- Hamburger - always after theme toggle on mobile -->
+            <button
+              id="mobileMenuBtn"
+              class="mobile-menu-btn"
+              aria-label="Open mobile menu"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+      <div class="mobile-menu-content glass-card">
+        <button
+          id="closeMobileMenu"
+          class="close-menu-btn"
+          aria-label="Close mobile menu"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <nav class="mobile-nav" aria-label="Mobile Navigation">
+          <!-- Home - active with sub-nav -->
+          <div class="mobile-nav-group is-active">
+            <a href="#hero" class="mobile-nav-link active-page">Home</a>
+            <div class="mobile-subnav">
+              <a href="#skills">Skills</a>
+              <a href="#experience">Experience</a>
+              <a href="#projects">Projects</a>
+              <a href="#clients">Companies</a>
+              <a href="#testimonials">Testimonials</a>
+            </div>
+          </div>
+          <a href="./pages/about.html" class="mobile-nav-link">About</a>
+          <a href="#projects" class="mobile-nav-link">Projects</a>
+          <a href="./pages/services.html" class="mobile-nav-link">Services</a>
+          <a href="#contact" class="mobile-nav-link">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- -- Hero Section -- -->
+    <section
+      id="hero"
+      class="hero-section hero-animate"
+      aria-labelledby="hero-title"
+    >
+      <div class="container-custom">
+        <div class="section-wrapper">
+          <div
+            class="hero-glass-container glass-card"
+            style="text-align: center"
+          >
+            <!-- 3D Coin-Toss Profile -->
+            <div
+              class="profile-coin-container"
+              aria-label="Profile photo of Ubaid Ahmad"
+            >
+              <div class="coin-inner">
+                <!-- FRONT: profile photo -->
+                <div class="coin-front">
+                  <img
+                    src="./assets/hero-profile-portrait.png"
+                    alt="Professional photo of Ubaid Ahmad"
+                    draggable="false"
+                  />
+                </div>
+                <!-- BACK: verified developer badge -->
+                <div class="coin-back">
+                  <div class="coin-back-icon-wrap">
+                    <i class="fas fa-certificate coin-icon-cert"></i>
+                    <i class="fas fa-check coin-icon-check"></i>
+                  </div>
+                  <span class="coin-back-title">VERIFIED</span>
+                  <span class="coin-back-sub">DEVELOPER</span>
+                </div>
+              </div>
+            </div>
+
+            <h1 id="hero-title" class="hero-title">Ubaid Ahmad</h1>
+            <h2 class="hero-subtitle">
+              Full-Stack MERN Developer &amp; UI/UX Designer
+            </h2>
+            <p class="hero-description">
+              I build full-stack MERN applications and polished UI/UX
+              experiences for clients who need fast, clean digital products -
+              without the enterprise overhead.
+            </p>
+
+            <!-- Primary CTA: Download CV -->
+            <!-- <a
+              href="./assets/ubaid-ahmad-cv.pdf"
+              download
+              class="cta-button glow-hover"
+              aria-label="Download Curriculum Vitae"
+              style="
+                margin-top: 1.5rem;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+              "
+            >
+              <i class="fas fa-download"></i> Download CV
+            </a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -- Stats Counters -- -->
+    <section id="counters" class="section" style="padding: 2rem 0">
+      <div class="container-custom">
+        <div class="section-wrapper" style="text-align: center">
+          <div class="stats-bar animate-on-scroll fade-in">
+            <div class="stat-item">
+              <h3 id="experienceCount">1+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat-item">
+              <h3 id="projectsCount">0</h3>
+              <p>Projects Shipped</p>
+            </div>
+            <div class="stat-item">
+              <h3 id="clientsCount">0</h3>
+              <p>Happy Clients</p>
+            </div>
+            <div class="stat-item">
+              <h3 id="techCount">0</h3>
+              <p>Technologies</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -- Skills Section -- -->
+    <section id="skills" class="section" aria-labelledby="skills-title">
+      <div class="container-custom">
+        <div class="section-wrapper">
+          <h2 id="skills-title" class="section-title animate-on-scroll fade-in">
+            Core Skills &amp; Technologies
+          </h2>
+          <div
+            id="skillsCategoryBar"
+            class="skills-category-bar animate-on-scroll fade-in"
+            role="tablist"
+            aria-label="Skill categories"
+          ></div>
+          <div id="skillsDisplayGrid" class="skills-display-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -- Experience Section -- -->
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="container-custom">
+        <div class="section-wrapper">
+          <h2
+            id="experience-title"
+            class="section-title animate-on-scroll fade-in"
+          >
+            Professional Experience
+          </h2>
+          <div id="experienceTimeline" class="experience-timeline"></div>
+          <div class="experience-btn-group animate-on-scroll fade-in">
+            <button
+              id="loadMoreExperience"
+              class="load-more-btn glow-hover"
+              style="display: none"
+              aria-label="Load more experience"
+            >
+              <i class="fas fa-chevron-down"></i> Show More Experience
+            </button>
+            <button
+              id="showLessExperience"
+              class="load-more-btn load-less-btn glow-hover"
+              style="display: none"
+              aria-label="Show less experience"
+            >
+              <i class="fas fa-chevron-up"></i> Show Less
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -- Projects Section (Scroll-Preview Carousel) -- -->
+    <section
+      id="projects"
+      class="section projects-carousel-section"
+      aria-labelledby="projects-title"
+    >
+      <div class="container-custom">
+        <div class="section-wrapper">
+          <h2
+            id="projects-title"
+            class="section-title animate-on-scroll fade-in"
+          >
+            Featured Projects
+          </h2>
+
+          <!-- Carousel Wrapper -->
+          <div
+            class="pc-wrapper animate-on-scroll slide-up"
+            aria-label="Projects carousel"
+          >
+            <!-- Left Arrow -->
+            <button
+              class="pc-arrow pc-arrow--left"
+              id="pcPrev"
+              aria-label="Previous project"
+            >
+              <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <!-- Track: holds all cards, only 3 visible at a time -->
+            <div class="pc-viewport" id="pcViewport">
+              <div class="pc-track" id="pcTrack">
+                <!-- Cards injected by JS -->
+              </div>
+            </div>
+
+            <!-- Right Arrow -->
+            <button
+              class="pc-arrow pc-arrow--right"
+              id="pcNext"
+              aria-label="Next project"
+            >
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <!-- Dot indicators -->
+          <div
+            class="pc-dots animate-on-scroll fade-in"
+            id="pcDots"
+            aria-label="Project navigation dots"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -- Clients & Collaborations Section -- -->
+    <!-- <section id="clients" class="section" aria-labelledby="clients-title">
+      <div class="container-custom">
+        <div class="section-wrapper">
+          <h2 id="clients-title" class="section-title">
+            Clients &amp; Collaborations
+          </h2>
+          <p class="clients-subtitle animate-on-scroll fade-in">
+            Companies and teams I've worked with - or plan to grow with.
+          </p>
+          <div
+            class="clients-carousel animate-on-scroll slide-up"
+            aria-label="Clients logos carousel"
+          >
+            <div
+              id="clientsTrack"
+              class="clients-track"
+              role="list"
+              aria-label="Scrolling client logos"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- -- Collaboration Section -- -->
+    <section id="collaboration" class="section" aria-labelledby="collab-title">
+      <div class="container-custom">
+        <div class="section-wrapper">
+          <h2 id="collab-title" class="section-title animate-on-scroll fade-in">
+            Open to Collaboration
+          </h2>
+          <p class="connect-description animate-on-scroll fade-in">
+            Whether you need a development partner or a UI/UX collaborator -
+            let's build something meaningful together.
+          </p>
+          <div class="collab-cards animate-on-scroll slide-up">
+            <div class="collab-card glass-card">
+              <div class="collab-icon"><i class="fas fa-code"></i></div>
+              <h3 class="collab-title">Development</h3>
+              <p class="collab-desc">
+                Full-stack MERN development, RESTful APIs, and scalable
+                architectures for startups and enterprises.
+              </p>
+            </div>
+            <div class="collab-card glass-card">
+              <div class="collab-icon"><i class="fas fa-pencil-ruler"></i></div>
+              <h3 class="collab-title">UI/UX Design</h3>
+              <p class="collab-desc">
+                Human-centered design, Figma prototyping, and pixel-perfect
+                interfaces that convert and delight.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -- Testimonials Section -- -->
+    <section
+      id="testimonials"
+      class="section"
+      aria-labelledby="testimonials-title"
+    >
+      <div class="container-custom">
+        <div class="section-wrapper">
+          <h2
+            id="testimonials-title"
+            class="section-title animate-on-scroll fade-in"
+          >
+            What Clients Say
+          </h2>
+          <div id="testimonialsGrid" class="testimonials-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Modal -->
+    <div
+      id="testimonialModal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Full Testimonial"
+    >
+      <div class="modal-content glass-card testimonial-modal-content">
+        <button
+          class="modal-close"
+          id="closeTestimonialModal"
+          aria-label="Close testimonial modal"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <div id="testimonialModalContent"></div>
+      </div>
+    </div>
+
+    <!-- -- Contact Form Section -- -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+      <div class="container-custom">
+        <div class="section-wrapper">
+          <h2
+            id="contact-title"
+            class="section-title animate-on-scroll fade-in"
+          >
+            Let's Work Together
+          </h2>
+          <p class="connect-description animate-on-scroll fade-in">
+            Have a project in mind? Fill in the form and I'll get back to you
+            within 24 hours on weekdays.
+          </p>
+
+          <div class="cf-card glass-card animate-on-scroll slide-up">
+            <!-- -- Mode Switcher -- -->
+            <div class="cf-switcher" role="tablist" aria-label="Contact method">
+              <div class="cf-switcher-track">
+                <button
+                  class="cf-tab cf-tab--active"
+                  data-mode="mail"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  <i class="fas fa-envelope"></i><span>Mail</span>
+                </button>
+                <button
+                  class="cf-tab"
+                  data-mode="whatsapp"
+                  role="tab"
+                  aria-selected="false"
+                >
+                  <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+                </button>
+                <div class="cf-tab-pill" aria-hidden="true"></div>
+              </div>
+            </div>
+
+            <!-- -- Single Form -- -->
+            <form id="contactForm" class="cf-form" novalidate>
+              <!-- Row 1: Full Name (50%) + mode-specific partner (50%) -->
+              <div class="cf-pair-row">
+                <div class="cf-field">
+                  <input
+                    type="text"
+                    id="cf-name"
+                    name="name"
+                    placeholder=" "
+                    autocomplete="name"
+                    aria-describedby="cf-name-error"
+                  />
+                  <label for="cf-name">Full Name</label>
+                  <span
+                    class="cf-field-error"
+                    id="cf-name-error"
+                    aria-live="polite"
+                  ></span>
+                </div>
+                <!-- Right column switches between Email and WA Number -->
+                <div class="cf-partner-col">
+                  <div
+                    class="cf-partner-opt cf-partner-opt--active"
+                    id="cfEmailOpt"
+                  >
+                    <div class="cf-field">
+                      <input
+                        type="email"
+                        id="cf-email"
+                        name="email"
+                        placeholder=" "
+                        autocomplete="email"
+                        aria-describedby="cf-email-error"
+                      />
+                      <label for="cf-email">Email</label>
+                    </div>
+                  </div>
+                  <div class="cf-partner-opt" id="cfContactOpt">
+                    <div class="cf-field">
+                      <input
+                        type="tel"
+                        id="cf-contact"
+                        name="contact"
+                        placeholder=" "
+                        autocomplete="tel"
+                        aria-describedby="cf-contact-error"
+                      />
+                      <label for="cf-contact">WhatsApp Number</label>
+                    </div>
+                  </div>
+                  <!-- Errors sit outside the absolute opts — only one shows at a time -->
+                  <span
+                    class="cf-field-error cf-field-error--partner"
+                    id="cf-email-error"
+                    aria-live="polite"
+                  ></span>
+                  <span
+                    class="cf-field-error cf-field-error--partner"
+                    id="cf-contact-error"
+                    aria-live="polite"
+                  ></span>
+                </div>
+              </div>
+
+              <!-- Row 2: Subject (mail only, full width, animated) -->
+              <div
+                class="cf-subject-block cf-subject-block--in"
+                id="cfSubjectBlock"
+              >
+                <div class="cf-field">
+                  <input
+                    type="text"
+                    id="cf-subject"
+                    name="subject"
+                    placeholder=" "
+                    aria-describedby="cf-subject-error"
+                  />
+                  <label for="cf-subject">Subject</label>
+                  <span
+                    class="cf-field-error"
+                    id="cf-subject-error"
+                    aria-live="polite"
+                  ></span>
+                </div>
+              </div>
+
+              <!-- Row 3: Message (always, full width) -->
+              <div class="cf-field-row">
+                <div class="cf-field cf-field--textarea">
+                  <textarea
+                    id="cf-message"
+                    name="message"
+                    placeholder=" "
+                    rows="5"
+                    aria-describedby="cf-message-error"
+                  ></textarea>
+                  <label for="cf-message">Message</label>
+                  <span
+                    class="cf-field-error"
+                    id="cf-message-error"
+                    aria-live="polite"
+                  ></span>
+                </div>
+              </div>
+
+              <!-- Submit — centred -->
+              <div class="cf-submit-row">
+                <button
+                  type="submit"
+                  class="cf-submit-btn glow-hover"
+                  id="cfSubmitBtn"
+                >
+                  <i class="fas fa-paper-plane" id="cfBtnIcon"></i>
+                  <span id="cfBtnText">Send Message</span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- /.cf-card -->
+        </div>
+      </div>
+    </section>
+
+    <!-- -- Toast notification (fixed, bottom-right) -- -->
+    <div class="cf-toast" id="cfToast" role="alert" aria-live="polite" hidden>
+      <i class="cf-toast-icon" id="cfToastIcon"></i>
+      <p class="cf-toast-msg" id="cfToastMsg"></p>
+      <button class="cf-toast-close" id="cfToastClose" aria-label="Dismiss">
+        &#x2715;
+      </button>
+    </div>
+
+    <!-- -- Social Section -- -->
+    <section id="social" class="section" aria-labelledby="social-title">
+      <div class="container-custom">
+        <div class="section-wrapper">
+          <h2 id="social-title" class="section-title animate-on-scroll fade-in">
+            Find Me Online
+          </h2>
+          <div class="social-icons animate-on-scroll zoom-in">
+            <a
+              href="https://github.com/opsubaid"
+              class="social-icon glass-card glow-hover"
+              target="_blank"
+              data-tooltip="GitHub"
+              aria-label="GitHub profile"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/ubaidwebdeveloper"
+              class="social-icon glass-card glow-hover"
+              target="_blank"
+              data-tooltip="LinkedIn"
+              aria-label="LinkedIn profile"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/tiredofcaffeine"
+              class="social-icon glass-card glow-hover"
+              target="_blank"
+              data-tooltip="Instagram"
+              aria-label="Instagram profile"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/share/19kVFqjhpN/"
+              class="social-icon glass-card glow-hover"
+              target="_blank"
+              data-tooltip="Facebook"
+              aria-label="Facebook profile"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.threads.com/@tiredofcaffeine"
+              class="social-icon glass-card glow-hover"
+              target="_blank"
+              data-tooltip="Threads"
+              aria-label="Threads profile"
+              ><i class="fab fa-threads"></i
+            ></a>
+            <a
+              href="https://discord.com/users/1419554765783961621"
+              class="social-icon glass-card glow-hover"
+              target="_blank"
+              data-tooltip="Discord"
+              aria-label="Discord profile"
+              ><i class="fab fa-discord"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -- Footer -- -->
+    <footer class="glass-footer">
+      <div class="container-custom">
+        <div class="footer-upgraded">
+          <nav class="footer-quick-links" aria-label="Footer Navigation">
+            <a href="./index.html">Home</a>
+            <a href="./pages/about.html">About</a>
+            <a href="#projects">Projects</a>
+            <a href="./pages/services.html">Services</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <div class="footer-availability">
+            <i class="fas fa-check-circle footer-avail-icon"></i>
+            <span>Currently accepting new projects</span>
+          </div>
+          <p class="footer-copyright">
+            &copy; 2026 Ubaid Ahmad &middot; Built with craft, not templates.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/projects-data.js"></script>
+    <script src="./scripts/skills-data.js"></script>
+    <script src="./scripts/experience-data.js"></script>
+    <script src="./scripts/clients-data.js"></script>
+    <script src="./scripts/testimonials-data.js"></script>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/contact-form-validation.js"></script>
+  </body>
+</html>

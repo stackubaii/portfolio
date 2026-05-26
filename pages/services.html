@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services - Ubaid Ahmad | MERN Development &amp; UI/UX Design</title>
+    <meta
+      name="description"
+      content="Three specialties. One developer. Zero handoff delays. Full-Stack MERN Development, UI/UX Design, and Consultation &amp; Discovery by Ubaid Ahmad."
+    />
+    <meta name="author" content="Ubaid Ahmad" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" href="../assets/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <!-- Page Loader -->
+    <div id="page-loader">
+      <div class="loader-spinner"></div>
+      <div class="loader-text">Loading...</div>
+    </div>
+
+    <!-- Liquid Background -->
+    <div class="liquid-bg"></div>
+
+    <!-- -- Floating Header -- -->
+    <header class="glass-header">
+      <div class="container-custom">
+        <div class="header-content">
+          <a href="../index.html" class="logo" style="text-decoration: none"
+            >Ubaid Ahmad</a
+          >
+          <nav class="desktop-nav" aria-label="Main Navigation">
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="./services.html" class="nav-active">Services</a>
+            <a href="../index.html#contact">Contact</a>
+          </nav>
+          <div class="header-actions">
+            <button
+              id="themeToggle"
+              class="theme-toggle-btn"
+              aria-label="Toggle light/dark mode"
+            >
+              <i class="fas fa-moon theme-icon-dark"></i>
+              <i class="fas fa-sun theme-icon-light" style="display: none"></i>
+            </button>
+            <button
+              id="mobileMenuBtn"
+              class="mobile-menu-btn"
+              aria-label="Open mobile menu"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+      <div class="mobile-menu-content glass-card">
+        <button
+          id="closeMobileMenu"
+          class="close-menu-btn"
+          aria-label="Close mobile menu"
+        >
+          <i class="fas fa-times"></i>
+        </button>
+        <nav class="mobile-nav" aria-label="Mobile Navigation">
+          <a href="../index.html" class="mobile-nav-link">Home</a>
+          <a href="./about.html" class="mobile-nav-link">About</a>
+          <a href="../index.html#projects" class="mobile-nav-link">Projects</a>
+          <!-- Services - active with sub-nav -->
+          <div class="mobile-nav-group is-active">
+            <a href="./services.html" class="mobile-nav-link active-page"
+              >Services</a
+            >
+            <div class="mobile-subnav">
+              <a href="#tiers-title">Service Tiers</a>
+              <a href="#process-title">How It Works</a>
+            </div>
+          </div>
+          <a href="../index.html#contact" class="mobile-nav-link">Contact</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- -- A. Page Header -- -->
+    <section
+      class="page-hero hero-animate"
+      aria-labelledby="services-hero-title"
+    >
+      <div class="container-custom">
+        <h1 id="services-hero-title" class="page-hero-title">What I Build</h1>
+        <p class="page-hero-sub">
+          Three specialties. One developer. Zero handoff delays.
+        </p>
+      </div>
+    </section>
+
+    <!-- -- B. Three Service Tier Cards -- -->
+    <section class="section" aria-labelledby="tiers-title">
+      <div class="container-custom">
+        <div class="section-wrapper" style="text-align: center">
+          <h2 id="tiers-title" class="section-title animate-on-scroll fade-in">
+            Service Tiers
+          </h2>
+
+          <div class="service-tier-grid">
+            <!-- Tier 1: MERN -->
+            <div class="service-card glass-card animate-on-scroll fade-in">
+              <i class="fas fa-layer-group service-tier-icon"></i>
+              <h3>Full-Stack MERN Development</h3>
+              <p>
+                End-to-end web applications built with MongoDB, Express, React,
+                and Node.js. From API to deployment, fully handled.
+              </p>
+              <ul>
+                <li>Custom REST API architecture</li>
+                <li>MongoDB Atlas setup and data modeling</li>
+                <li>React frontend with responsive UI</li>
+                <li>JWT authentication and authorization</li>
+                <li>Vercel + Railway deployment</li>
+              </ul>
+              <p class="service-turnaround">
+                Turnaround: 2-6 weeks depending on scope
+              </p>
+              <a
+                href="mailto:iubaidahmad303@gmail.com?subject=MERN%20Development%20Inquiry&body=Hi%20Ubaid%2C%0A%0AI%20reviewed%20your%20Full-Stack%20MERN%20Development%20service%20and%20I%20would%20love%20to%20discuss%20a%20project%20with%20you.%0A%0A---%20What%20I%20Need%20---%0AProject%20type%3A%20%0ATimeline%3A%20%0ABudget%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you.%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D"
+                class="service-cta-btn"
+                >Start a Project</a
+              >
+            </div>
+
+            <!-- Tier 2: UI/UX -->
+            <div class="service-card glass-card animate-on-scroll fade-in">
+              <i class="fas fa-pencil-ruler service-tier-icon"></i>
+              <h3>UI/UX Design</h3>
+              <p>
+                Research-driven design that solves real user problems. From
+                wireframe to pixel-perfect Figma prototype, ready for handoff.
+              </p>
+              <ul>
+                <li>User research and journey mapping</li>
+                <li>Lo-fi wireframes and information architecture</li>
+                <li>Figma high-fidelity prototype</li>
+                <li>Complete design system</li>
+                <li>Developer handoff documentation</li>
+              </ul>
+              <p class="service-turnaround">Turnaround: 1-3 weeks</p>
+              <a
+                href="mailto:iubaidahmad303@gmail.com?subject=UI%2FUX%20Design%20Inquiry&body=Hi%20Ubaid%2C%0A%0AI%20reviewed%20your%20UI%2FUX%20Design%20service%20offering%20and%20I%20would%20love%20to%20discuss%20a%20project%20with%20you.%0A%0A---%20What%20I%20Need%20---%0AProject%20type%3A%20%0ATimeline%3A%20%0ABudget%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you.%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D"
+                class="service-cta-btn"
+                >Book a Design Sprint</a
+              >
+            </div>
+
+            <!-- Tier 3: Consultation & Discovery -->
+            <div class="service-card glass-card animate-on-scroll fade-in">
+              <i class="fas fa-compass service-tier-icon"></i>
+              <h3>Consultation &amp; Discovery</h3>
+              <p>
+                Not sure where to start? Let's map it out first - scope, stack,
+                and structure defined before a single line is written.
+              </p>
+              <ul>
+                <li>Project scoping and requirements analysis</li>
+                <li>Tech stack recommendation</li>
+                <li>UI/UX audit of existing products</li>
+                <li>Information architecture planning</li>
+                <li>Actionable roadmap delivery</li>
+              </ul>
+              <p class="service-turnaround">Turnaround: 2-5 days</p>
+              <a
+                href="mailto:iubaidahmad303@gmail.com?subject=Consultation%20%26%20Discovery%20Inquiry&body=Hi%20Ubaid%2C%0A%0AI%20reviewed%20your%20Consultation%20%26%20Discovery%20service%20and%20I%20would%20love%20to%20discuss%20a%20project%20with%20you.%0A%0A---%20What%20I%20Need%20---%0AProject%20type%3A%20%0ATimeline%3A%20%0ABudget%3A%20%0A%0ALooking%20forward%20to%20hearing%20from%20you.%0A%0ABest%20regards%2C%0A%5BYour%20Name%5D"
+                class="service-cta-btn"
+                >Book a Session</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -- C. Process Section -- -->
+    <section class="section" aria-labelledby="process-title">
+      <div class="container-custom">
+        <div class="section-wrapper" style="text-align: center">
+          <h2
+            id="process-title"
+            class="section-title animate-on-scroll fade-in"
+          >
+            How It Works
+          </h2>
+
+          <div class="process-flow animate-on-scroll fade-in">
+            <div class="process-step">
+              <div class="process-number">1</div>
+              <i class="fas fa-search"></i>
+              <h4>Discovery</h4>
+              <p>
+                Understand goals, constraints, and user needs before writing a
+                single line.
+              </p>
+            </div>
+
+            <div class="process-step">
+              <div class="process-number">2</div>
+              <i class="fas fa-th-large"></i>
+              <h4>Design</h4>
+              <p>
+                Wireframes and prototypes validated before development begins.
+              </p>
+            </div>
+
+            <div class="process-step">
+              <div class="process-number">3</div>
+              <i class="fas fa-code"></i>
+              <h4>Build</h4>
+              <p>
+                Clean, documented code shipped in iterative milestones with
+                visibility.
+              </p>
+            </div>
+
+            <div class="process-step">
+              <div class="process-number">4</div>
+              <i class="fas fa-cloud-upload-alt"></i>
+              <h4>Deploy</h4>
+              <p>
+                Live deployment with CI/CD, domain setup, and environment
+                configuration.
+              </p>
+            </div>
+
+            <div class="process-step">
+              <div class="process-number">5</div>
+              <i class="fas fa-life-ring"></i>
+              <h4>Support</h4>
+              <p>
+                Post-launch support window for bugs, tweaks, and handoff
+                questions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -- Footer -- -->
+    <footer class="glass-footer">
+      <div class="container-custom">
+        <div class="footer-upgraded">
+          <nav class="footer-quick-links" aria-label="Footer Navigation">
+            <a href="../index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="../index.html#projects">Projects</a>
+            <a href="./services.html">Services</a>
+            <a href="../index.html#contact">Contact</a>
+          </nav>
+          <div class="footer-availability">
+            <i class="fas fa-check-circle footer-avail-icon"></i>
+            <span>Currently accepting new projects</span>
+          </div>
+          <p class="footer-copyright">
+            &copy; 2026 Ubaid Ahmad &middot; Built with craft, not templates.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../scripts/projects-data.js"></script>
+    <script src="../scripts/skills-data.js"></script>
+    <script src="../scripts/experience-data.js"></script>
+    <script src="../scripts/clients-data.js"></script>
+    <script src="../scripts/testimonials-data.js"></script>
+    <script src="../scripts/app.js"></script>
+  </body>
+</html>
