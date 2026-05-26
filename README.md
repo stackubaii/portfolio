@@ -366,7 +366,7 @@ This is a fully static site. Push to any static host with no configuration requi
 | Netlify      | Drag-and-drop the project folder or connect via Git     |
 | Vercel       | Run `vercel --prod` from the project root               |
 
-The live site is currently deployed at [bugcurator.github.io](https://bugcurator.github.io/Ubaid-Dev).
+The live site is currently deployed at [stackubaii.github.io](https://stackubaii.github.io/portfolio).
 
 ---
 
